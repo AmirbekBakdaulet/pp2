@@ -16,8 +16,8 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
     now = datetime.now()
-    second_angle = 270 + now.second * 6
-    minute_angle = 270 + now.minute * 6  
+    second_angle = now.second * 6
+    minute_angle =60 + now.minute * 6  
     screen.fill((255, 255, 255))
     screen.blit(mickey_image, mickey_rect)
     rotated_second_hand = pygame.transform.rotate(second_hand_image, -second_angle)
