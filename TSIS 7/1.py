@@ -1,5 +1,4 @@
 import pygame
-import sys
 from datetime import datetime
 
 pygame.init()
@@ -16,7 +15,6 @@ while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
-            sys.exit()
     now = datetime.now()
     second_angle = 270 + now.second * 6
     minute_angle = 270 + now.minute * 6  
